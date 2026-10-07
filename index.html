@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="th"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kai App Kup | ร้านซีเกมส์</title>
+<title>Kai App Kup</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -95,7 +95,7 @@ dialog{border:0;border-radius:18px;background:var(--surf);color:var(--ink);paddi
 <script>
 const $=s=>document.querySelector(s),dlg=$('#dlg');
 // ===== ตั้งค่า: วาง URL ของ Web App จาก Google Apps Script ตรงนี้ =====
-const API='PASTE_WEB_APP_URL_HERE';
+const API='https://script.google.com/macros/s/AKfycbwWPoEBrLxWoKMPxEm0B6O4je4NFyI9KW8xl06QGpqpao-wFaaXdHxU1FosfyTzRPUMdA/exec';
 let TOKEN='',S=JSON.parse($('#state').textContent),cur=null,adm=false,tab='contacts',dirty=false,AC=null,mute=false;
 const call=async b=>(await fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(b)})).json();
 const esc=t=>String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
