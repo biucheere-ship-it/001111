@@ -95,7 +95,7 @@ dialog{border:0;border-radius:18px;background:var(--surf);color:var(--ink);paddi
 <script>
 const $=s=>document.querySelector(s),dlg=$('#dlg');
 // ===== ตั้งค่า: วาง URL ของ Web App จาก Google Apps Script ตรงนี้ =====
-const API='https://script.google.com/macros/s/AKfycbwWPoEBrLxWoKMPxEm0B6O4je4NFyI9KW8xl06QGpqpao-wFaaXdHxU1FosfyTzRPUMdA/exec';
+const API='https://script.google.com/macros/s/AKfycbyJOir0mObJhYZ2iSSiyhLkNCUbxqxp7zxt3P1MOMP7-wJAth1znl-qclxn_l-fwlxiXg/exec';
 let TOKEN='',S=JSON.parse($('#state').textContent),cur=null,adm=false,tab='contacts',dirty=false,AC=null,mute=false;
 const call=async b=>(await fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(b)})).json();
 const esc=t=>String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
